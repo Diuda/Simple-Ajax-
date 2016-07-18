@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Ajax
+
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#b1").click(function(){
+				$("#test").load('test.html');
+				
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div id="test" style="position: absolute;text-align: center; background-color: grey; width: 40%; height: 50%;">
+	click on this portion to load something
+
+	<input type="submit" id="b1" value="AJAX MAGIC"></input>
+</div>
+
+</body>
+</html>
